@@ -33,11 +33,14 @@ Major things necessary until there is a "working prototype" are:
 # Use it yourself
 Please clone the reposity and run the application yourself if you are interested!
 
-I highly recommend using Pyenv (https://github.com/pyenv/pyenv) to manage Python versions. \n
-I built this application on Python 3.6 and Django 2.2.6 \n 
-So create a virtualenv with that Python version and install the above version of Django. \n
+I highly recommend using Pyenv (https://github.com/pyenv/pyenv) to manage Python versions.
+
+I built this application on Python 3.6 and Django 2.2.6
+
+So create a virtualenv with that Python version and install the above version of Django.
 
 Then you should be ready to rock:
+
 activate your virtual env and run `python manage.py runserver`
 
 
