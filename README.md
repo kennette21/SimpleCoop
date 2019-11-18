@@ -24,6 +24,7 @@ There is a seperate React application which represents the Frontend. This React 
 There is no frontend code yet. That is coming soon ;) 
 
 # Current Status
+## BE WARNED: this project is in rapid prototyping phase so things are being added and changing quite often. What you are reading may be outdated.
 At the moment it is just a simple Django web application with no React. Everythign is very bare bones. We have users, products, and producers.
 Major things necessary until there is a "working prototype" are: 
 1. Order/Cart
