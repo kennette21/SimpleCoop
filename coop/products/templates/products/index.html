@@ -1,17 +1,26 @@
 <h1>Simple Food Coop</h1>
 
 {% if user.is_authenticated %}
-<h3>Currently logged in as {{ user.username }}</h3>
-<p><a href="{% url 'logout' %}">Log out</a></p>
+    <h3>Currently logged in as {{ user.username }}</h3>
+    <p><a href="{% url 'logout' %}">Log out</a></p>
 {% else %}
-<p><a href="{% url 'signup' %}">Sign Up</a></p>
-<p><a href="{% url 'login' %}">Log In </a></p>
+    <p><a href="{% url 'signup' %}">Sign Up</a></p>
+    <p><a href="{% url 'login' %}">Log In </a></p>
+{% endif %}
+
+{% if user.order %}
+    
+
 {% endif %}
 
 {% if products_list %}
+    <h3>Products</h3>
     <ul>
     {% for product in products_list %}
-        <li><a href="/products/{{ product.id }}/">{{ product.name }}</a></li>
+        <li>
+            <a href="/products/{{ product.id }}/">{{ product.name }}</a>
+            <button>Add to Cart</button>
+        </li>
     {% endfor %}
     </ul>
 {% else %}
