@@ -4,7 +4,7 @@ import DataProvider from "./DataProvider";
 import Table from "./Table";
 
 const App = () => (
-  <DataProvider endpoint="products/api/product/" 
+  <DataProvider endpoint="api/products/" 
                 render={data => <Table data={data} />} />
 );
 

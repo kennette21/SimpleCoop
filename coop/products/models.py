@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import CustomUser
 
 
 class Producer(models.Model):
@@ -36,4 +37,9 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-# class Order(models.Model):
+class Order(models.Model):
+    user = models.OneToOneField(
+        CustomUser,
+        on_delete=models.CASCADE,
+    )
+    products = models.ManyToManyField(Product)
