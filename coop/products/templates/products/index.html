@@ -8,12 +8,24 @@
     <p><a href="{% url 'login' %}">Log In </a></p>
 {% endif %}
 
-{% if user.order %}
-    
-
-{% endif %}
-
 {% if products_list %}
+    {% if order_list %}
+        <h3>Here is your current Order!</h3>
+        <ul>
+        {% for product in order_list %}
+            <li>
+                <a href="/products/{{ product.id }}">{{ product.name }}</a>
+                <button>Remove from Order</button>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        {% if user.is_authenticated %}
+            <h3>Nothing in your cart!! Try adding something.</h3>
+        {% else %}
+            <p>^^^ login/signup befoe you can do anything yo ^^^</p>
+        {% endif %}
+    {% endif %}
     <h3>Products</h3>
     <ul>
     {% for product in products_list %}
