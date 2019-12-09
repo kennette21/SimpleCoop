@@ -31,6 +31,11 @@ Major things necessary until there is a "working prototype" are:
 2. Add to order from Product list
 3. Cycle implimentation
 
+### Open source
+If you stumble across this feel free to use anything and everything you see
+
+Inspired by Peer to Peer exchanges
+
 # Use it yourself
 Please clone the reposity and run the application yourself if you are interested!
 
