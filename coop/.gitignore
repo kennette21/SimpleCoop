@@ -1,6 +1,6 @@
 *.pyc 
 node_modules/
 __pycache__/
-.vscode/
+**.vscode/
 static/
 db.sqlite3
