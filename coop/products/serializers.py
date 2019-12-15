@@ -7,6 +7,8 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class OrderSerializer(serializers.ModelSerializer):
+    # products = serializers.StringRelatedField(many=True)
+
     class Meta:
         model = Order
         fields = '__all__'
